@@ -1,0 +1,285 @@
+ <!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone Моделдери</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="iphone-cards-section">
+    <h2 class="section-title">iPhone Модел</h2>
+
+    <div class="cards-container">
+      
+      <div class="card">
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkK8ZWXDR0USe9IjJJPCiJFDFT5fwLanGf-2nKncVNXg&s=10" alt="iPhone 16 Pro Max" class="card-img" />
+        <div  class="card-body">
+          <h3>iPhone 16 Pro Max</h3>
+          <p class="card-desc">6.9 дюймдук Super Retina XDR дисплей, A18 Pro чипи жана 5x оптикалык зум.</p>
+          <div class="card-price">Баасы: $1199</div>
+          <a href="index-1apple.html" class="card-btn-1">Смотрет</a>
+        </div>
+      </div>
+
+      
+      <div class="card">
+ 
+        <img src="https://object.pscloud.io/cms/cms/Photo/img_0_77_6135_0_1_l4iXYI.webp" alt="iPhone 16 Pro" class="card-img" />
+        <div class="card-body">
+          <h3>iPhone 16 Pro</h3>
+          <p class="card-desc">Титан корпус, 4K 120fps видео тартуу мүмкүнчүлүгү жана жаңы Camera Control баскычы.</p>
+          <div class="card-price">Баасы: $999</div>
+          <a href="index-2apple copy.html" class="card-btn-2">Смотрет</a>
+        </div>
+      </div>
+
+      
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO-Dp6R7j6Q14f9YbHJzt1cPcLo_E_pSBgEsthLaQ9Rw&s=10" alt="iPhone 16" class="card-img" />
+        <div class="card-body">
+          <h3>iPhone 16</h3>
+          <p class="card-desc">Apple Intelligence колдоосу, A18 чипи, Action баскычы жана жаңыланган кош камера.</p>
+          <div class="card-price">Баасы: $799</div>
+          <a href="index-3apple copy .html" class="card-btn-3">Смотрет</a>
+        </div>
+      </div>
+
+      
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdDmZwgwEvXM_etzOGUitz_iZS6ztWPvhhBcdb5ITy8Q&s=10" alt="iPhone 15 Pro Max" class="card-img" />
+        <div class="card-body">
+          <h3>iPhone 15 Pro Max</h3>
+          <p class="card-desc">Жеңил титан дизайн, A17 Pro процессору, USB-C ылдам порту жана күчтүү батарея.</p>
+          <div class="card-price">Баасы: $1050</div>
+          <a href="index-4apple copy .html" class="card-btn-4">Смотрет</a>
+        </div>
+      </div>
+
+      
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7U_UJGiXFH06IYpfl7P0-h4C_aqth6SaETpGP2B5eBA&s=10" alt="iPhone 15" class="card-img" />
+        <div class="card-body">
+          <h3>iPhone 15</h3>
+          <p class="card-desc">Dynamic Island экраны, 48 МП негизги камера жана күнгө чыдамдуу жарык дисплей.</p>
+          <div class="card-price">Баасы: $699</div>
+          <a href="index-5apple copy .html" class="card-btn-5">Смотрет</a>
+        </div>
+      </div>
+
+     
+      <div class="card">
+       
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEg8RAFeR7x1huf8oG-UoZXwYO1RT3-b-ie0p4xTKEMQ&s=10" alt="iPhone 14" class="card-img" />
+        <div class="card-body">
+          <h3>iPhone 14</h3>
+          <p class="card-desc">Ишенимдүү A15 Bionic чипи, түнкү режимде мыкты сүрөткө тартуу жана туруктуу иштөө.</p>
+          <div class="card-price">Баасы: $599</div>
+          <a href="index-6apple copy .html" class="card-btn-6">Смотрет</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.iphone-cards-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: #1d1d1f;
+}
+
+/* Бардык карточкалар горизонталдуу тордо (grid) жайгашат */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 карточка бир катарда */
+  gap: 24px;
+  align-items: stretch;
+}
+
+.card {
+  background: #f5f5f7;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.09);
+}
+
+.card-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  background: #0071e3;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 12px;
+}
+
+/* Бирдей бийиктиктеги сүрөттөр */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  
+}
+
+.card-body h3 {
+  font-size: 20px;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #515154;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+/* Баа жана баскыч ылдый жакта бир сызыкта турушу үчүн */
+.card-price {
+  margin-top: auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 14px;
+}
+
+.card-btn-1 {
+  width: 100%;
+  background: #0071e3;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+
+.card-btn-2 {
+  width: 100%;
+  background: #0071e3;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+
+.card-btn-3 {
+  width: 100%;
+  background: #0071e3;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+
+.card-btn-4 {
+  width: 100%;
+  background: #0071e3;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+
+.card-btn-5 {
+  width: 100%;
+  background: #0071e3;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+
+.card-btn-6 {
+  width: 100%;
+  background: #0071e3;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+
+.card-btn:hover {
+  background: #005bb5;
+}
+
+/* Планшеттер үчүн 2 карточка */
+@media (max-width: 900px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Телефондор үчүн 1 карточка */
+@media (max-width: 560px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+
+</body>
+</html>
