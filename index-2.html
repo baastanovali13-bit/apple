@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Учебный обзор технологий</title>
+  <title>Устройства и программная среда — Учебный проект</title>
   <style>
     * {
       box-sizing: border-box;
@@ -13,112 +13,128 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #ffffff;
-      color: #1d1d1f;
-      line-height: 1.5;
+      background-color: #f4f6f9;
+      color: #18181b;
+      line-height: 1.55;
     }
 
-    .about-section {
-      max-width: 980px;
+    .wrap {
+      max-width: 1000px;
       margin: 48px auto;
       padding: 0 20px;
     }
 
-    .about-tag {
+    .badge {
       display: inline-block;
       font-size: 12px;
       font-weight: 600;
-      color: #0071e3;
-      background: #eef6ff;
-      padding: 5px 12px;
+      color: #0f52ba;
+      background: #e6efff;
+      padding: 6px 12px;
       border-radius: 999px;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
 
-    .about-header h1 {
-      font-size: 34px;
+    .hero {
+      background: #ffffff;
+      border: 1px solid #e4e4e7;
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      line-height: 1.2;
       margin-bottom: 10px;
       letter-spacing: -0.02em;
     }
 
-    .about-lead {
-      font-size: 16px;
-      color: #424245;
-      max-width: 720px;
-      margin-bottom: 28px;
+    .hero p {
+      font-size: 15px;
+      color: #3f3f46;
+      max-width: 760px;
     }
 
-    .about-grid {
+    .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 18px;
     }
 
-    .about-card {
-      background: #f5f5f7;
-      border: 1px solid #e5e5ea;
+    .card {
+      background: #ffffff;
+      border: 1px solid #e4e4e7;
       border-radius: 18px;
-      padding: 24px;
+      padding: 22px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
     }
 
-    .about-card h2 {
-      font-size: 19px;
+    .card h2 {
+      font-size: 18px;
       margin-bottom: 8px;
+      color: #18181b;
     }
 
-    .about-card p {
+    .card p {
       font-size: 14px;
-      color: #515154;
+      color: #52525b;
     }
 
-    .demo-note {
-      margin-top: 24px;
+    .note {
+      margin-top: 22px;
       font-size: 13px;
-      color: #6e6e73;
+      color: #71717a;
     }
 
-    @media (max-width: 680px) {
-      .about-grid {
+    @media (max-width: 700px) {
+      .grid {
         grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 26px;
       }
     }
   </style>
 </head>
 <body>
-  <section class="about-section">
-    <div class="about-header">
-      <span class="about-tag">Учебный проект</span>
-      <h1>Обзор экосистемы и устройств</h1>
-      <p class="about-lead">
-        Демонстрационная страница для практики вёрстки на базе справочных сведений о компании, основанной 1 апреля 1976 года в Калифорнии (штаб-квартира — Apple Park в Купертино).
-      </p>
-    </div>
+  <main class="wrap">
+    <span class="badge">Учебный проект</span>
 
-    <div class="about-grid">
-      <div class="about-card">
+    <section class="hero">
+      <h1>Устройства и программная среда</h1>
+      <p>
+        Учебная страница для практики HTML и CSS: информационный обзор устройств и сервисов компании, основанной 1 апреля 1976 года в Калифорнии (Apple Park в Купертино).
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
         <h2>Линейка устройств</h2>
         <p>Смартфоны iPhone, компьютеры Mac (MacBook Air, MacBook Pro, iMac, Mac mini), планшеты iPad, Apple Watch, AirPods, Apple TV и Apple Vision Pro.</p>
-      </div>
+      </article>
 
-      <div class="about-card">
-        <h2>Платформы и ОС</h2>
-        <p>Системы iOS, iPadOS, macOS, watchOS и visionOS обеспечивают согласованную работу устройств внутри одной среды.</p>
-      </div>
+      <article class="card">
+        <h2>Операционные системы</h2>
+        <p>Платформы iOS, iPadOS, macOS, watchOS и visionOS обеспечивают согласованную работу устройств.</p>
+      </article>
 
-      <div class="about-card">
+      <article class="card">
         <h2>Цифровые сервисы</h2>
-        <p>Сервисы App Store, iCloud, Apple Music, Apple Pay, Apple TV+ и AppleCare дополняют аппаратную часть.</p>
-      </div>
+        <p>Сервисы App Store, iCloud, Apple Music, Apple Pay, Apple TV+ и AppleCare дополняют устройства.</p>
+      </article>
 
-      <div class="about-card">
-        <h2>Архитектура и дизайн</h2>
-        <p>Акцент на лаконичный интерфейс и собственные чипы Apple Silicon с упором на производительность и энергоэффективность.</p>
-      </div>
-    </div>
+      <article class="card">
+        <h2>Дизайн и процессоры</h2>
+        <p>Лаконичный интерфейс и чипы Apple Silicon сочетают производительность и энергоэффективность.</p>
+      </article>
+    </section>
 
-    <p class="demo-note">
-      Примечание: учебная страница создана в рамках практики HTML/CSS и не является официальным ресурсом.
+    <p class="note">
+      Примечание: Учебная страница для практики, не является официальным магазином или формой сбора данных.
     </p>
-  </section>
+  </main>
 </body>
 </html>
